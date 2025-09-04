@@ -40,5 +40,5 @@ build/
 application.properties
 /out
 /target
-/.idea/artifacts
+.idea/artifacts
 /src/main/resources/META-INF
