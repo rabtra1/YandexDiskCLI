@@ -15,14 +15,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import ru.rabtra.dto.TreeResponse;
-
 import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.nio.file.Path;
-import java.util.List;
-import java.util.Objects;
 
 @Service
 public class YandexApiService {
@@ -267,7 +263,7 @@ public class YandexApiService {
         }
     }
 
-    public void restoreResourceFromTrash(String path, String name, boolean overwrite)
+    public void restoreResourceFromTrash(String path, String name, boolean overwrite) // next version
             throws URISyntaxException, IOException {
         HttpPut httpPut = new HttpPut(BASE_URL+"trash/resources/restore");
         setHeaders(httpPut);
