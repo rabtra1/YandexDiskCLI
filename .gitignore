@@ -38,3 +38,7 @@ build/
 .DS_Store
 
 application.properties
+/out
+/target
+/.idea/artifacts
+/src/main/resources/META-INF
